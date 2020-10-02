@@ -1,68 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Generator</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="public/css/style.css" rel="stylesheet">
+</head>
+
+<body>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-6 offset-lg-3">
                 <h1 class="text-center">Password Generator</h1>
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-6 offset-lg-3">
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Длина строки <span id="pass-length">(10)</span></label>
-                            <input type="range" class="form-control" id="set-1" max="50" value="10">
+                        <label for="exampleInputEmail1">String length<span class="pass-length-val">(10)</span></label>
+                        <input type="range" class="form-control set-pass-length" max="50" value="10">
                     </div>
 
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="set-2" checked> Цыфры
+                            <input type="checkbox" class="set-nums" checked>
+                            Numbers
                         </label>
                     </div>
 
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="set-3" checked> Строчные буквы
+                            <input type="checkbox" class="set-lowercase-letters" checked>
+                            Small letters
                         </label>
                     </div>
 
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="set-4"> Прописные буквы
+                            <input type="checkbox" class="set-uppercase-letters">
+                            Big letters
                         </label>
                     </div>
 
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" id="set-5"> Спецсимволы
+                            <input type="checkbox" class="set-symbols">
+                            Symbols
                         </label>
                     </div>
-                  
-                    <button type="button" class="btn btn-default" id="generator">Generate</button>
+
+                    <button type="button" class="btn btn-primary generate">
+                        Generate
+                    </button>
                 </form>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div id="out"></div>
+                        <div class="out"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/generator.js"></script>
+    <script src="public/js/generator.js"></script>
 
-  </body>
+</body>
+
 </html>
