@@ -26,8 +26,8 @@ const generator = {
     },
     generatePass() {
         const out = document.querySelector('.out'),
-            state = this.state
-        let result = []
+            state = this.state,
+            result = []
 
         for (let i in state) {
             state[i].isActive = checkingSettings(state[i].selector)
@@ -42,12 +42,10 @@ const generator = {
             let pass = '';
 
             for (let j = 0; j < passLength(); j++) {
-                pass += result[randomInteger(0, result.length - 1)];
+                pass += result[randomInteger(0, result.length - 1)]
             }
             console.log(pass.length)
-            out.innerHTML += `<p> ${pass} </p>`;
-
-
+            out.innerHTML += `<p> ${pass} </p>`
         }
     }
 }
@@ -65,8 +63,8 @@ function checkingSettings(elem) {
 }
 
 function randomInteger(min, max) {
-    let rand = min - 0.5 + Math.random() * (max - min + 1);
-    return Math.round(rand);
+    let rand = min - 0.5 + Math.random() * (max - min + 1)
+    return Math.round(rand)
 }
 
 
