@@ -26,8 +26,8 @@ const generator = {
     },
     generatePass() {
         const out = document.querySelector('.out'),
-            state = this.state,
-            result = []
+            state = this.state
+        let result = []
 
         for (let i in state) {
             state[i].isActive = checkingSettings(state[i].selector)
