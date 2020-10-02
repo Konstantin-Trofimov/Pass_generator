@@ -44,7 +44,6 @@ const generator = {
             for (let j = 0; j < passLength(); j++) {
                 pass += result[randomInteger(0, result.length - 1)]
             }
-            console.log(pass.length)
             out.innerHTML += `<p> ${pass} </p>`
         }
     }
