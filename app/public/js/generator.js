@@ -7,7 +7,6 @@ const generator = {
         nums: {
             selector: 'set-nums',
             content: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
-
         },
         symbols: {
             selector: 'set-symbols',
@@ -16,12 +15,10 @@ const generator = {
         lowercaseLetters: {
             selector: 'set-lowercase-letters',
             content: ['a', 'b', 'c', 'd', 'i', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'],
-
         },
         uppercaseLetters: {
             selector: 'set-uppercase-letters',
             content: ['A', 'B', 'C', 'D', 'I', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'],
-
         }
     },
     generatePass() {
